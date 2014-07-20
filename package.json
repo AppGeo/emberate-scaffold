@@ -1,0 +1,40 @@
+{
+  "name": "my-project",
+  "version": "0.0.0",
+  "description": "My project's description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "browserify": {
+    "transform": [
+      "hbsfy"
+    ]
+  },
+  "hbsfy": {
+    "precompiler": "ember-template-compiler",
+    "compiler": "Ember.Handlebars"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/my-username/my-project.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/my-username/my-project/issues"
+  },
+  "homepage": "https://github.com/my-username/my-project",
+  "devDependencies": {
+    "browserify": "^4.2.2",
+    "ember-template-compiler": "^1.6.1",
+    "emberate": "^1.0.0-alpha.1",
+    "handlebars": "^1.3.0",
+    "hbsfy": "git://github.com/knownasilya/node-hbsfy#ember"
+  },
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "express": "^4.6.1"
+  }
+}
